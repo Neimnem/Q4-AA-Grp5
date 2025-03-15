@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.panel {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.yellow { background-color: yellow; border-top-left-radius: 100%; }
+.green { background-color: green; border-top-right-radius: 100%; }
+.blue { background-color: blue; border-bottom-left-radius: 100%; }
+.red { background-color: red; border-bottom-right-radius: 100%; }
+
+.panel:active {
+    opacity: 0.5;
+}
+
+.center {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: lightgray;
+}
