@@ -13,26 +13,47 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: "Times New Roman", serif;
+            background-color: #f5f5f5;
+            text-align: center;
         }
         h1 {
             font-size: 3rem;
-            margin-bottom: 100px;
-        }
-        a {
-            font-size: 1.5rem;
-            text-decoration: none;
-            color: white;
             font-weight: bold;
-            background-color: black;
-            padding: 15px 40px;
-            border-radius: 50px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .button-container {
+            display: flex;
+            gap: 15px;
+        }
+        .button {
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            background-color: white;
+            padding: 10px 30px;
+            border-radius: 30px;
+            border: 2px solid black;
             display: inline-block;
             text-align: center;
+        }
+        .play-button {
+            background-color: black;
+            color: white;
         }
     </style>
     <body>
         <h1>Simon Says</h1>
-        <a href="choice.html"> PLAY </a>
+        <p>Get ready to follow the commands carefully!</p>
+        <div class="button-container">
+            <a href="#" class="button">Subscribe for up to 75% off</a>
+            <a href="#" class="button">Log in</a>
+            <a href="choice.html" class="button play-button">Play</a>
+        </div>
     </body>
 </html>
