@@ -49,13 +49,28 @@
             display: inline-block;
             text-align: center;
         }
-         button:hover{
-             capacity: 0.8;
-             transform: translateY(-10px);
-         }
         .play-button {
             background-color: black;
             color: white;
+        }
+         @keyframes swing {
+            0% { transform: rotate(-5deg); }
+            50% { transform: rotate(5deg); }
+            100% { transform: rotate(-5deg); }
+        }
+        .moon-astronaut {
+            animation: swing 3s infinite ease-in-out;
+            transform-origin: bottom center;
+        }
+        
+        /* Animation for balloon astronaut */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .balloon-astronaut {
+            animation: float 3s infinite ease-in-out;
         }
     </style>
     <body>
@@ -65,5 +80,8 @@
             <a href="login.html" class="button login-button">Log In</a>
             <a href="choice.html" class="button play-button">Play</a>
         </div>
+
+        <img src="moon-astronaut.png" class="moon-astronaut" alt="Astronaut on moon">
+        <img src="balloon-astronaut.png" class="balloon-astronaut" alt="Astronaut with planet balloons">
     </body>
 </html>
