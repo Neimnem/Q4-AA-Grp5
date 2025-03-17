@@ -23,6 +23,12 @@
             color: white; 
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
+
+         @keyframes moveBackground {
+             0% {background-position: center top;}
+             50% {background-position: center top;}
+             100% {background-position: center top;}
+         }
         h1 {
             font-size: 3rem;
             font-weight: bold;
@@ -53,25 +59,6 @@
             background-color: black;
             color: white;
         }
-         @keyframes swing {
-            0% { transform: rotate(-5deg); }
-            50% { transform: rotate(5deg); }
-            100% { transform: rotate(-5deg); }
-        }
-        .moon-astronaut {
-            animation: swing 3s infinite ease-in-out;
-            transform-origin: bottom center;
-        }
-        
-        /* Animation for balloon astronaut */
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-        .balloon-astronaut {
-            animation: float 3s infinite ease-in-out;
-        }
     </style>
     <body>
         <h1>SIMON SAYS</h1>
@@ -80,8 +67,5 @@
             <a href="login.html" class="button login-button">Log In</a>
             <a href="choice.html" class="button play-button">Play</a>
         </div>
-
-        <img src="moon-astronaut.png" class="moon-astronaut" alt="Astronaut on moon">
-        <img src="balloon-astronaut.png" class="balloon-astronaut" alt="Astronaut with planet balloons">
     </body>
 </html>
