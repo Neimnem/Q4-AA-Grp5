@@ -23,12 +23,6 @@
             color: white; 
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
-
-         @keyframes moveBackground {
-             0% {background-position: center top;}
-             50% {background-position: center top;}
-             100% {background-position: center top;}
-         }
         h1 {
             font-size: 3rem;
             font-weight: bold;
@@ -59,6 +53,27 @@
             background-color: black;
             color: white;
         }
+        /* Footer */
+		    .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+			height: 150px;
+			margin-top: 20px;
+			padding-top: 10px;
+         }
+		    .footer-info {
+			text-align: center;
+			align-items: center;
+		 }
+		    footer a {
+            color: white; 
+			text-decoration: none;
+		}
+            .footer a:hover {
+			text-decoration: underline;
+        }
     </style>
     <body>
         <h1>SIMON SAYS</h1>
@@ -67,5 +82,22 @@
             <a href="login.html" class="button login-button">Log In</a>
             <a href="choice.html" class="button play-button">Play</a>
         </div>
+         <!-- Footer -->
+        <footer class="footer">
+        <div class="container">
+	    <div class="footer-info">
+		<span class="advertisements" style="font-size: 40px; letter-spacing: 1px">
+		<br>
+        </span>
+		<p></p>
+		<p class="description">
+			Copyright &copy;2025 <a href="#">Simon Says</a> 
+			| <a class="footer-a" href="#">SimonSays.com</a>
+			| <a class="footer-a" href="#">Sitemap</a>
+			| <a class="footer-a" href="#">Privacy Policy</a>
+			| <a class="footer-a" href="#">Terms of Service</a>
+			</p>
+		</div>
+	    </div>
     </body>
 </html>
